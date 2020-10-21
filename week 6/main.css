@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategrey;
+  background-image: url("../images/white_brick_wall.png");
+}
+
+/* 
+  This is a CSS Comment
+  Shortcut for adding the comment Control + / or Command + /
+*/
+h1 {
+  color: white;
+}
+
+p {
+  background-color: lightblue;
+}
+
+/* Selecting multiple elements to add same styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+  list-style: none;
+}
+
+/* Selecting child elements multiple level */
+
+nav ul a {
+  color: darkslategrey;
+  text-decoration: none;
+  font-size: 1.75rem;
+  /* 1.75rem = 1.75 x 16 = 28px */
+}
+
+/* Selecting HTML element with class name */
+.orange-link {
+  background: darkslategrey;
+  color: orange;
+  text-decoration: none;
+}
+
+/* Selecting HTML element with id value */
+#tow {
+  background: orange url("../images/bread.jpg") no-repeat center center;
+  background-size: cover;
+  /* adding styles to make text readable */
+  color: white;
+  /* font-size: 24px; */
+  /* updating font size to rem */
+  font-size: 1.5rem;
+  /* 1.5rem = 1.5  X 16px = 24px */
+
+  /* adding padding to add space between the border and content */
+  padding: 1em;
+  /* 1em = 1 x 24px = 24px */
+  width: 50vw;
+}
+
+.large-text {
+  font-size: 20px;
+}
+
+/* Child Selector or Direct Child Selector
+  Selecting only the p directly inside teh article
+ */
+article>p {
+  font-size: 24px;
+  font-weight: bold;
+  /* lighter, normal, bold, bolder OR 100, 200, 300, 800 */
+  line-height: 1.5;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+
+/* 
+Adjacent sibling selector
+Selecting only the ul that is adjacent to a h3
+ */
+h3+ul {
+  border: 1px solid black;
+}
+
+/* Attribute selector */
+
+[href="#tow"] {
+  font-weight: bold;
+}
+
+[target="_blank"] {
+  text-transform: uppercase;
+}
+
+/* Using Pseudo Classes
+Styling Navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+  background: orange;
+  /* horizontal vertical blur spread color */
+  box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  text-decoration: underline;
+}
+
+nav ul a:active {
+  /* horizontal vertical blur spread color */
+  box-shadow: 0 0 4px 2px black;
+}
+
+/* 
+Position related selectors 
+first child
+*/
+aside ul li:first-child {
+  font-weight: bold;
+}
+
+/* last child */
+section ol li:last-child {
+  font-weight: bold;
+}
+
+/* collapse table border into one */
+table {
+  border-collapse: collapse;
+}
+
+/* nth-child selector */
+tbody tr:nth-child(even) {
+  background-color: #d5836c;
+}
+
+/* 
+  using nth-child with n. 
+  Where n is 0, 1, 2, 3, .... until the number of elements
+*/
+table th:nth-child(n),
+table td:nth-child(n) {
+  /* hex color value with 3 characters */
+  border: 1px solid #000;
+}
+
+/* the above is same as this
+table th,
+table td{
+} */
+
+/* 2n+1 if n is 0,1,2,3... then 2n+1 will be 1, 3, 5, 7.... */
+table td:nth-child(2n+1) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* specificity: 0002 */
+body footer {
+  background-color: cornflowerblue;
+}
+
+/* Cascade */
+footer {
+  background-color: aqua;
+}
+
+/* specificity: 0001 */
+footer {
+  background-color: red;
+}
+
+/* specificity: 0010 */
+.site-footer {
+  background-color: coral;
+}
+
+/* 0011 */
+footer.site-footer {
+  background-color: teal;
+}
+
+/* 0102 */
+/* #tow dl dt {} */
+
+/* 0112 */
+/* #tow dl dt.first {} */
+
+section p {
+  width: 50%;
+  height: 100px;
+
+  /* padding: 1em; */
+
+  /* top right bottom left */
+  /* padding: 1em .5em 1em .5em; */
+
+  /* top-bottom left-right */
+  padding: 1em .5em;
+
+  /* margin: 2em; */
+  margin: -1em 2em 2em 2em;
+
+  /* border: 2px solid black; */
+  border-left: 6px solid black;
+}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
