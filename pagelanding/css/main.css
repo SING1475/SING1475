@@ -110,10 +110,9 @@ margin: 0.5em 0 ;
      color: #ff8480;
      text-decoration: none;
  }
- .footer {
+ footer {
      background-color: #fffd8c;
      padding: 1em 0;
-     ba
  }
 
 .contactsheet{
@@ -130,12 +129,12 @@ margin: 0.5em 0 ;
     color: white;
     border:  none;
     width: 100%;
-    font-size: 1.5em ;
+    font-size: 22px;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 8px;
     border-radius: 14px;
-    margin: 0.5em 0 ;
-
+    /* width: 94%; */
+    margin: 0.5em 0;
 }
 .social
 {
@@ -143,9 +142,104 @@ margin: 0.5em 0 ;
     justify-content: space-between;
 }
 .contactpage {
-    color: black;
     display: flex;
-    padding: 0.5rem;
     justify-content:  space-between;
-    margin: 0.5em;
+}
+.city{
+    width:80%;
+    margin-left: 1em;
+}
+.hours{
+    width:20%;
+}
+.city-box{
+    width: 84%;
+    border:none;
+    border-radius: 10px;
+    padding:1em;
+    margin: 0 0.5em;
+}
+.hours-box{
+    width:67%;
+    border:none;
+    border-radius: 10px;
+    padding:1em;
+}
+@media screen and (min-width:376px) and (max-width:768px)
+{
+    .container {
+        max-width: 418px;
+    }
+    .contact-form{
+        display:flex;
+        margin: 8px 0
+    }
+    .button-2{
+        margin:0 5px
+    }
+    .city-box{
+        width: 80%;}
+    h3{
+        font-size: 20px;
+    }
+    .check p{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width:769px)
+{
+    .container {
+        max-width: 1135px;
+    }
+    main{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: none;
+    }
+    .background-image{
+        grid-column: 1/4;
+        width: 50%;
+        grid-row: none;
+        margin: auto;
+    }
+    .web-content{
+        grid-column: 1/2;
+        grid-row: none; 
+    }
+    .registration-form{
+        grid-column:3/4;
+        grid-row: none;
+    }
+    .about-image{
+        width: 10%;
+    }
+    .contact-form{
+        display:grid;
+        grid-template-columns:repeat(1,1fr 1fr);
+    }
+    .button-2{
+        margin:0 5px
+    }
+    .city-box{
+        width: 80%;}
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(1,1fr 1fr);
+        }
+        .bg-img{
+            margin-bottom: 75px;
+        }
+        .social {
+            justify-content: space-between;
+            width: 45%;
+            float: right;
+            margin: 35px 0;
+        }
+        .hours-box{
+            width:78%
+        }
 }
