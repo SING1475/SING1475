@@ -49,7 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-/* mobile styles */
+/* first step for making website responsive for mobile styles */
 
 body {
     background-color: #f7f7ff;
@@ -167,10 +167,10 @@ margin: 0.5em 0 ;
     border-radius: 10px;
     padding:1em;
 }
-/* tablet styles */
+/* to make website responsive on tablet  */
 @media screen and (min-width:376px) and (max-width:768px)
 {
-     /* to make wesite in center */
+     /* to make website in center */
     .container {
         max-width: 418px;
     }
@@ -195,7 +195,7 @@ margin: 0.5em 0 ;
     }
 
 }
-/* deskto styles */
+/* to make website responsive on desktop screen */
 @media screen and (min-width:769px)
 {
        /* to make wesite in center */
@@ -251,3 +251,4 @@ margin: 0.5em 0 ;
             width:78%
         }
 }
+/*  the end of css coding */
