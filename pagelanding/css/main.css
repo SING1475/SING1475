@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* first step for making website responsive for mobile styles */
+
+body {
+    background-color: #f7f7ff;
+
+}
+.about-image {
+ width: 30%;
+}
+ html {
+ font-family: 'Montserrat', sans-serif;
+ }
+
+ h1 {
+     font-size: 4em;
+     font-weight: bold;
+ }
+ /* to make wesite in center */
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+} 
+h2 {
+font-size: 1.9em ;
+font-weight: bold;
+}
+p {
+    font-weight: lighter;
+    margin: 0.5em 0 ;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.registration-form {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 14px 11px 22px 0px rgba(0,0,0,0.29);
+    margin-bottom: 2em;
+}
+.contact-form-input{
+    border: none;
+    background-color: #f7f7ff;
+    margin-bottom: 1em;
+    padding:1em 3px;
+    width:100%;
+}
+.button {
+    background-color: #57eeab;
+border: none;
+width: 100%;
+font-size: 1.5em ;
+font-weight: bold;
+padding: 0.5em;
+border-radius: 14px;
+margin: 0.5em 0 ;
+}
+ a {
+     color: #ff8480;
+     text-decoration: none;
+ }
+ footer {
+     background-color: #fffd8c;
+     padding: 1em 0;
+ }
+
+.contactsheet{
+    border: none;
+    color: #57eeab;
+}
+.contactpage{
+    border: none;
+    color: #57eeab;
+    width: 100%;
+}
+.button-2 {
+    background-color: #ff8480;
+    color: white;
+    border:  none;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 14px;
+    /* width: 94%; */
+    margin: 0.5em 0;
+}
+/* to make social media logo vertically align */
+.social
+{
+    display: flex;
+    justify-content: space-between;
+}
+.contactpage {
+    display: flex;
+    justify-content:  space-between;
+}
+.city{
+    width:80%;
+    margin-left: 1em;
+}
+.hours{
+    width:20%;
+}
+.city-box{
+    width: 84%;
+    border:none;
+    border-radius: 10px;
+    padding:1em;
+    margin: 0 0.5em;
+}
+.hours-box{
+    width:67%;
+    border:none;
+    border-radius: 10px;
+    padding:1em;
+}
+/* to make website responsive on tablet  */
+@media screen and (min-width:376px) and (max-width:768px)
+{
+     /* to make website in center */
+    .container {
+        max-width: 418px;
+    }
+    /* to make text box in one line */
+    .contact-form{
+        display:flex;
+        margin: 8px 0
+    }
+    .button-2{
+        margin:0 5px
+    }
+    .city-box{
+        width: 80%;}
+    h3{
+        font-size: 20px;
+    }
+    .check p{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+
+}
+/* to make website responsive on desktop screen */
+@media screen and (min-width:769px)
+{
+       /* to make wesite in center */
+    .container {
+        max-width: 1135px;
+    }
+    /* to horizontally align the different sections of main tag */
+    main{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: none;
+    }
+    .background-image{
+        grid-column: 1/4;
+        width: 50%;
+        grid-row: none;
+        margin: auto;
+    }
+    .web-content{
+        grid-column: 1/2;
+        grid-row: none; 
+    }
+    .registration-form{
+        grid-column:3/4;
+        grid-row: none;
+    }
+    .about-image{
+        width: 10%;
+    }
+    .contact-form{
+        display:grid;
+        grid-template-columns:repeat(1,1fr 1fr);
+    }
+    .button-2{
+        margin:0 5px
+    }
+    .city-box{
+        width: 80%;}
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(1,1fr 1fr);
+        }
+        .bg-img{
+            margin-bottom: 75px;
+        }
+        .social {
+            justify-content: space-between;
+            width: 45%;
+            float: right;
+            margin: 35px 0;
+        }
+        .hours-box{
+            width:78%
+        }
+}
+/*  the end of css coding */
