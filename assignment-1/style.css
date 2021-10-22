@@ -11,7 +11,7 @@ body {
     text-align: center;
   }
   
-  .box{
+  .grid {
     display: grid;
     position: relative;
     width: 50%;
@@ -21,7 +21,7 @@ body {
     transform: translateX(-50%);
   }
   
-  .box> div {
+  .grid > div {
     position: relative;
     height: 0;
     overflow: hidden;
@@ -29,19 +29,17 @@ body {
     padding-bottom: 90%;
     margin: 5%;
     border-radius: 6vw;
-    background-color: rgb(255, 255, 255);
+    background-color: lightblue;
     cursor: pointer;
   }
   
   .emoji {
-    display:  grid;
-    grid-template-columns: auto;
     position: absolute;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     text-align: center;
     top: 25%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
+    transform: translateX(-50%) translateY(-50%) rotateZ(335deg);
   }
   
   .button {
