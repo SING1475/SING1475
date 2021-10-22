@@ -1,0 +1,12 @@
+
+*.gridRow {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: min-content;
+}
+
+.cell {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: min-content;
+}

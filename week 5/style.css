@@ -1,0 +1,61 @@
+:root {
+  --background-color: black;
+  --cell-color: beige;
+  --cell-color-hover: rgba(255, 255, 255, .3);
+  --column-number: 4;
+  --transition: .3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  position: relative;
+  width: 50%;
+  grid-template-columns: repeat(var(--column-number), 1fr);
+  margin: 5% 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:;
+}
+
+.grid > div {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 90%;
+  margin: 5%;
+  border-radius: 1vw;
+  transition: var(--transition);
+  background-color: var(--cell-color);
+  cursor: pointer;
+}
+
+.item {
+  position: absolute;
+  font-size: smaller;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+  transition: var(--transition);
+}
+
+.grid > div:hover {
+  z-index: 999;
+  transform: scale(var(--zoom));
+  background-color: var(--cell-color-hover);
+}
+
+.grid > div:hover .item {
+  transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
+}
